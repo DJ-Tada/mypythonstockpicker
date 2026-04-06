@@ -1,0 +1,17 @@
+# Secrets / environment-specific config
+config.py
+keys
+
+# Output and generated data
+output/
+out/
+*.parquet
+*.csv
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS files
+.DS_Store

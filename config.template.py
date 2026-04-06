@@ -9,4 +9,4 @@ ALPHA_VANTAGE_API_KEY = ''
 YAHOO_API_KEY = ''
 
 # Other settings
-DEFAULT_OUTPUT_DIR = 'out'
+DEFAULT_OUTPUT_DIR = 'output'
