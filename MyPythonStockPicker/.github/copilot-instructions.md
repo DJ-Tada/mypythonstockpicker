@@ -27,7 +27,8 @@ When setting up a new project or clone:
 3. Create `config.template.py` (tracked, placeholder values) → copy to `config.py` (git-ignored, real secrets). Never commit `config.py`.
 4. Create `output/` folders where needed and add each `<module>/output/` to `.gitignore`
 5. Install deps: `pip install -r requirements.txt`
-6. Windows paths: use raw strings (`r"C:\..."`) or `pathlib.Path`
+6. Create a `README.md` in the project root describing the project purpose, setup instructions, usage, and project structure
+7. Windows paths: use raw strings (`r"C:\..."`) or `pathlib.Path`
 
 ### Initial config.py Setup
 
@@ -57,6 +58,7 @@ Every module that generates files **must** have an `output/` subfolder. When cre
 - [ ] `__init__.py` with single-line package docstring only (no imports)
 - [ ] `output/` subfolder if module generates files → add to `.gitignore`
 - [ ] New config values go in `config.template.py` (never hardcode secrets)
+- [ ] Update `README.md` if the module adds user-facing functionality or new CLI commands
 
 ## Terminal Maintenance
 
