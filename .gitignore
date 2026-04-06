@@ -19,3 +19,6 @@ venvstockscreener/
 
 # macOS
 .DS_Store
+
+# config
+config.py
