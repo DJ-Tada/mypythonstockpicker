@@ -1,9 +1,9 @@
 """Fetch all US stock tickers from the Massive.com API and optionally download financials.
 
 Usage:
-    python -m scripts.fetch_tickers                     # fetch tickers only
-    python -m scripts.fetch_tickers --financials        # fetch tickers + financials
-    python -m scripts.fetch_tickers --check-status      # check fill status of existing financials
+    python -m stockpicker.fetch_tickers                     # fetch tickers only
+    python -m stockpicker.fetch_tickers --financials        # fetch tickers + financials
+    python -m stockpicker.fetch_tickers --check-status      # check fill status of existing financials
 """
 from __future__ import annotations
 

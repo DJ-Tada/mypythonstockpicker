@@ -38,10 +38,10 @@ All commands are run from the project root.
 
 ```bash
 # Fetch tickers from Massive.com and download financial statements
-python -m scripts.fetch_tickers
+python -m stockpicker.fetch_tickers
 
 # Run the full analysis pipeline (compile financials → summarise → score)
-python -m scripts.run_full_summary
+python -m stockpicker.run_full_summary
 
 # Run the Finviz stock screener
 python -m stockpicker.screener
@@ -60,11 +60,10 @@ MyPythonStockPicker/
 │   ├── financials_scored.csv   # Scored & ranked tickers
 │   ├── financials_summary.csv  # One-row-per-ticker summary
 │   └── Overview.csv            # Finviz screener results
-├── scripts/
-│   ├── fetch_tickers.py        # Fetch tickers & download financials
-│   └── run_full_summary.py     # Orchestrate full analysis pipeline
 ├── stockpicker/
 │   ├── __init__.py             # Package init & output dir helper
+│   ├── fetch_tickers.py        # Fetch tickers & download financials
+│   ├── run_full_summary.py     # Orchestrate full analysis pipeline
 │   ├── compile_financials.py   # Compile per-ticker CSVs into unified datasets
 │   ├── financial_utils.py      # Ticker list helpers, batch download, fill checks
 │   ├── query_financials.py     # Extract metrics, score & rank tickers

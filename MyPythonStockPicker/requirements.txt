@@ -1,0 +1,12 @@
+pandas
+numpy
+yfinance
+requests
+finvizfinance
+transformers
+goose3
+tqdm
+pyarrow
+matplotlib
+seaborn
+yahoo_fin

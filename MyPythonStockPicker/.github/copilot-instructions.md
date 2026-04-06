@@ -11,11 +11,11 @@ When working with image files (`.png`, `.jpg`, `.jpeg`, `.gif`, `.webp`, `.bmp`,
 
 ## CLI Convention
 
-All CLI commands and usage examples assume the **project root** (`MyPythonStockPicker/`) as the working directory (i.e. the folder containing `config.py`). Always write commands accordingly — e.g. `python -m scripts.run_full_summary`, not instructions to `cd` into subfolders first.
+All CLI commands and usage examples assume the **project root** (`MyPythonStockPicker/`) as the working directory (i.e. the folder containing `config.py`). Always write commands accordingly — e.g. `python -m stockpicker.run_full_summary`, not instructions to `cd` into subfolders first.
 
 ```
-python -m scripts.fetch_tickers
-python -m scripts.run_full_summary
+python -m stockpicker.fetch_tickers
+python -m stockpicker.run_full_summary
 python -m stockpicker.screener
 ```
 
@@ -58,6 +58,7 @@ Every module that generates files **must** have an `output/` subfolder. When cre
 - [ ] `__init__.py` with single-line package docstring only (no imports)
 - [ ] `output/` subfolder if module generates files → add to `.gitignore`
 - [ ] New config values go in `config.template.py` (never hardcode secrets)
+- [ ] Update `requirements.txt` if new third-party packages are imported
 - [ ] Update `README.md` if the module adds user-facing functionality or new CLI commands
 
 ## Terminal Maintenance
